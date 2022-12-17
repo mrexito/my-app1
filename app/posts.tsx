@@ -10,7 +10,7 @@ export default async function Posts() {
   return (
     <div>
       {posts.map(p => (
-        <div key={p.id}>{p.title}</div>
+        <Post key={p.id} data = {p} />
       ))}
     </div>
   )

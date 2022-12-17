@@ -1,4 +1,4 @@
-import React from 'react'
+import LikeButton from "./like-button"
 
 export default function Post({ data }) {
   let { title, body, id} = data
@@ -6,6 +6,7 @@ export default function Post({ data }) {
     <div>
       <h2> {title} </h2>
       <p>{body}</p>
+      <LikeButton />
     </div>
   )
 }
